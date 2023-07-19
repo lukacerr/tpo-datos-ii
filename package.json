@@ -1,0 +1,21 @@
+{
+  "name": "tpo-datos",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "release": "node apps/api/dist/main.js"
+  },
+  "author": "Luka Cerrutti, Francisco Ezequiel Gonzalez, ...",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.6"
+  },
+  "dependencies": {
+    "@liaoliaots/nestjs-redis": "^9.0.5"
+  }
+}
