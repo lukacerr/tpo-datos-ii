@@ -3,7 +3,6 @@ import utils.request as rq
 
 
 def print_product(x):
-    print(x)
     io.print_arr([
         f"ID: {x['_id']}",
         f"Título: {x['title']}",
@@ -48,8 +47,8 @@ def update_product():
     print_product(updated)
 
 
-def show_products(user):
-    print(f"LISTA DE PRODUCTOS de '{user['name']}': \n")
+def show_products():
+    print(f"LISTA DE PRODUCTOS: \n")
     productos = rq.get('product')
     for prod in productos:
         io.simple_space()
@@ -70,4 +69,4 @@ def exec(user):
         case 1: create_product()
         case 2: add_to_cart(user)
         case 3: update_product()
-        case 4: show_products(user)
+        case 4: show_products()
