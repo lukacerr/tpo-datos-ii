@@ -10,12 +10,13 @@
 
 # Como ejecutar
 
-> Requisitos: Node.js, Python interpreter
+> Requisitos: Node.js, Python interpreter & Pip
 
 1. Con una terminal en el repositorio, ejecutar `npm i` para instalar los packages del proyecto
-2. Crear un archivo **.env** en el directorio _apps/api_, y llenarlo con los datos que aparecen [al final de este archivo](#env)
-3. Cambiar el directorio de la terminal a la API (ejemplo, `cd apps/api`) y ejecutar `npm run dev`
-4. Ejecutar el script de Python del archivo `app.py` (este mismo es el cliente como tal)
+2. Instalar el package requests de Python con `pip install requests`
+3. Crear un archivo **.env** en el directorio _apps/api_, y llenarlo con los datos que aparecen [al final de este archivo](#env)
+4. Cambiar el directorio de la terminal a la API (ejemplo, `cd apps/api`) y ejecutar `npm run dev`
+5. Ejecutar el script de Python del archivo `app.py` (este mismo es el cliente como tal)
 
 ## PostgreSQL
 
